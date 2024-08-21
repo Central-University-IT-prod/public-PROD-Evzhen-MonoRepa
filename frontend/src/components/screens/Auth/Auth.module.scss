@@ -1,0 +1,39 @@
+.auth {
+  &__inner {
+    height: 100vh;
+    max-width: 580px;
+    margin: auto;
+    margin-top: 22vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__title {
+    align-self: center;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    &-label {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    &-input {
+      margin-top: -20px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 5px;
+      border-color: transparent;
+    }
+    &-err {
+      color: var(--yellow-color);
+      margin-top: -20px;
+    }
+    button {
+      margin-top: 5px;
+    }
+  }
+}

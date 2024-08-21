@@ -1,0 +1,32 @@
+.info {
+  &__edit {
+    padding: 5px !important;
+  }
+  &__teams {
+    padding: 5px !important;
+  }
+  &__participants {
+    padding: 5px !important;
+  }
+  &__tabs {
+    &-item {
+      color: white !important;
+    }
+    &-list {
+      * {
+        text-transform: none !important;
+        font-weight: 600 !important;
+        font-size: 15px !important;
+        @media (max-width: 580px) {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 580px) {
+    margin-top: -30px !important;
+  }
+}
+.info__tabs-item[tabindex='0'] {
+  color: var(--yellow-color) !important;
+}

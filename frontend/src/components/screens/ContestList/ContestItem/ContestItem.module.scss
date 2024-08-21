@@ -1,0 +1,77 @@
+.contest {
+  &__item {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: var(--green-color);
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    &-title {
+      font-size: 17px;
+    }
+    &-date {
+      text-align: right;
+      font-weight: 500;
+    }
+    &-text {
+      font-weight: 500;
+      text-align: right;
+    }
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+  @media (max-width: 768px) {
+    &__item {
+      padding: 15px;
+      &-title {
+        font-size: 16px;
+      }
+      &-date {
+        font-size: 15px;
+      }
+      &-text {
+        font-size: 15px;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    &__item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      &-title {
+        font-size: 15px;
+        text-align: left;
+      }
+      &-date {
+        font-size: 14px;
+        text-align: left;
+      }
+      &-text {
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  @media (max-width: 768px) {
+    gap: 7px;
+  }
+  @media (max-width: 560px) {
+    gap: 5px;
+  }
+}

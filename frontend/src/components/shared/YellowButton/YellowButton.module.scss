@@ -1,0 +1,20 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  background-color: var(--yellow-color);
+  border-radius: 6px;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: .7;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}

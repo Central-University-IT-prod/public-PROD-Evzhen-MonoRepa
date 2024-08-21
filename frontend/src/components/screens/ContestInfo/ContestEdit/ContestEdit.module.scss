@@ -1,0 +1,101 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 1280px !important;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.input {
+  margin-top: -20px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.multi {
+  height: 120px;
+  margin-top: -20px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: transparent;
+  resize: none;
+}
+
+.error {
+  color: var(--yellow-color);
+  margin-top: -20px;
+}
+
+.date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-input {
+  width: 49%;
+}
+
+.select {
+  margin-top: -20px;
+  padding: 0;
+}
+
+.finish-contest {
+  &__button {
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    width: min(1280px, 100%);
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid var(--red-color);
+    color: var(--red-color);
+    font-weight: 500;
+    &:hover {
+      background-color: var(--red-color);
+      color: var(--green-color);
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+}
+
+.load {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  &__button {
+    border-radius: 15px !important;
+    color: var(--green-color) !important;
+    font-weight: 600 !important;
+  }
+  &__title {
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  &__example {
+    background: center / contain no-repeat url('/results_example.jpg');
+    width: min(100%, 800px);
+    height: 50px;
+    margin-top: 10px;
+  }
+}
+
+.load__input {
+  display: none;
+}

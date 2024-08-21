@@ -1,0 +1,50 @@
+.container {
+  max-width: 1280px !important;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.input {
+  margin-top: -20px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.multi {
+  height: 120px;
+  margin-top: -20px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: transparent;
+  resize: none;
+}
+
+.error {
+  color: var(--yellow-color);
+  margin-top: -20px;
+}
+
+.date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-input {
+  width: 49%;
+}
+
+.select {
+  margin-top: -20px;
+  padding: 0;
+}
